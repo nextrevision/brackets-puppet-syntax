@@ -1,0 +1,24 @@
+{
+  "name": "com.nextrevision.puppet-syntax",
+  "title": "Puppet-Syntax",
+  "description": "Syntax highlighting for Puppet manifests.",
+  "homepage": "https://github.com/nextrevision/brackets-puppet-syntax",
+  "keywords": [
+    "puppet",
+    "syntax",
+    "highlighting"
+  ],
+  "version": "0.1.0",
+  "author": {
+    "name": "John Patterson",
+    "email": "notarobot@nextrevision.net",
+    "url": "http://nextrevision.net"
+  },
+  "licenses": [{
+    "type": "Apache 2.0",
+    "url": "http://www.apache.org/licenses/"
+  }],
+  "engines": {
+    "brackets": ">=0.29.0"
+  }
+}
