@@ -116,7 +116,7 @@ define(function (require, exports, module) {
       }
       // Do we have Puppet specific words?
       if (word && words.hasOwnProperty(word)) {
-        // Reverse, reverse (negates the initial next())
+        // Negates the initial next()
         stream.backUp(1);
         // Acutally move the stream
         stream.match(/[\w]+/);
@@ -185,7 +185,7 @@ define(function (require, exports, module) {
       }
       // Keep advancing through all the rest
       stream.eatWhile(/[\w-]/);
-      // Return Null <- Best comment yet
+      // Return unformatted for everything else
       return null;
     }
     // Start it all
