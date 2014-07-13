@@ -168,7 +168,7 @@ define(function (require, exports, module) {
       // Match characters that we are going to assume
       // are trying to be regex
       if (ch == '/') {
-        stream.match(/.*\//);
+        stream.match(/.*\/\s/);
         return 'variable-3';
       }
       // Match all the numbers
