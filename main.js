@@ -56,6 +56,18 @@ define(function (require, exports, module) {
       return "string";
     }
 
+    function tokenRegex(stream, state) {
+      var current, prev = false;
+      while (!stream.eol() && (current = stream.next())) {
+        if (current == '/' && prev == '\\') {
+          continue;
+        } else if (current == '/') {
+          return 'variable-3';
+        }
+        prev = current;
+      }
+    }
+
     // Main function
     function tokenize(stream, state) {
       // Matches one whole word
@@ -168,8 +180,7 @@ define(function (require, exports, module) {
       // Match characters that we are going to assume
       // are trying to be regex
       if (ch == '/') {
-        stream.match(/.*\/\s/);
-        return 'variable-3';
+        return tokenRegex(stream, state);
       }
       // Match all the numbers
       if (ch.match(/[0-9]/)) {

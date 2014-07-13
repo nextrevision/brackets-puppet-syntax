@@ -1,4 +1,4 @@
-## 2014-07-13 Release 0.1.2
+## 2014-07-13 Release 0.1.3
 ###Summary
 
 Bug fixes in regex highlighting
