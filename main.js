@@ -1,8 +1,10 @@
 define(function (require, exports, module) {
-    'use strict';
+  'use strict';
 
   // For integration with Brackets' LanguageManager
   var LanguageManager = brackets.getModule("language/LanguageManager");
+  var CodeMirror = brackets.getModule("thirdparty/CodeMirror2/lib/codemirror");
+
   CodeMirror.defineMode("puppet", function () {
     // Stores the words from the define method
     var words = {};
