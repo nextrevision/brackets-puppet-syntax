@@ -1,3 +1,8 @@
+## 2014-12-09 Release 0.1.6
+### Summary
+
+Fix deprecation warning for CodeMirror
+
 ## 2014-12-09 Release 0.1.5
 ### Summary
 
